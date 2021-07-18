@@ -87,8 +87,8 @@ def history_func(update, context):
         rates[end_date.strftime('%d.%m')] = rate
     # Drawing graph
     plt.plot(rates.keys(), rates.values())
-    plt.xlabel('rates')
-    plt.ylabel('dates')
+    plt.xlabel('dates')
+    plt.ylabel('rates')
     plt.savefig('fig1.png')
     plt.clf()
     # And sending it to the user
